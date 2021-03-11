@@ -12,3 +12,5 @@ Stage 1: Naming conventions
 - remove the hard coded values AKA "magic numbers" (0.1f, 0.25f ...)
 
 - validate your input values
+
+- replace if-then-else checks for the productType with switch
