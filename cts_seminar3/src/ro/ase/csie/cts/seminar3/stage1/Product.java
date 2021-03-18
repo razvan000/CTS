@@ -46,7 +46,6 @@ public class Product {
 			throw new UnsupportedOperationException("New enum symbol not processed");
 		}
 		
-		
 		return finalPrice;
 	}
 }
