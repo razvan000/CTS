@@ -6,23 +6,23 @@ public class RESTBackend {
 
 	String url;
 	String data;
-	
-	private static Hashtable<String, RESTBackend> backends=new Hashtable<>();
-	
+
+	private static Hashtable<String, RESTBackend> backends = new Hashtable<>();
+
 	private RESTBackend(String url, String data) {
 		super();
-		this.data=data;
-		this.url=url;
+		this.data = data;
+		this.url = url;
 	}
-	
+
 	public static RESTBackend getRESTBackend(String url, String data) {
 		RESTBackend backend = backends.get(url);
-		if(backend==null) {
+		if (backend == null) {
 			backend = new RESTBackend(url, data);
 			backends.put(url, backend);
 		}
-		
+
 		return backend;
 	}
-	
+
 }

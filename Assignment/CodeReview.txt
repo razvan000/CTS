@@ -1,0 +1,22 @@
+	Review
+1. The code is not formatted
+2. Methods should be named appropriately in order to give a glimpse on what they do. -> rename "calculate" and "setValue"
+3. Inconsistency with naming conventions. Use lower camelcase
+4. Define each variable on a single line
+5. Use curly brackets even when there is a single instruction
+6. Use indentation
+7. Use a single space between a function header and the starting bracket before its body (not a newline)
+8. Use only one space between the variable type and the variable name
+9. Use a space between operators and operands
+10. Use an enumeration for the static attributes (STANDARD, BUDGET, PREMIUM, SUPER_PREMIUM)
+11. Don t use comments to explain code.
+12. Use Interfaces for mandatory methods.
+13. Define exceptions that are suited for your need. -> create InvalidLoanValueException class.
+14. YAGNI - there is no need to use an additional account object at line 44.
+15. Remove magic numbers (365, 0.125)
+16. KISS - the method "calculate" does 2 things. create a method for calculating interest
+17. The class account does not have single responsibility-> create a printer class and a fees calculator one.
+18. Don't define variable unless you really have to use them ('vb' at line 37)
+19. Validate inputs
+
+

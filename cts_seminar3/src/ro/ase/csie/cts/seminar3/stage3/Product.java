@@ -24,7 +24,7 @@ public class Product {
 	}
 	
 	public void setMarketingStrategy(MarketingInterface mkInterface) {
-		if(mkService==null) {
+		if(mkInterface==null) {
 			throw new  NullPointerException();
 		}
 
