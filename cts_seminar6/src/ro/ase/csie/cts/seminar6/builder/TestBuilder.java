@@ -11,6 +11,15 @@ public class TestBuilder {
 //								100, false, false, new Weapon(),
 //								null, new Flying(), null);
 		
+		SuperHero superman =
+				new SuperHero.SuperHeroBuilder("Superman", 2000).build();
+		
+		SuperHero joker = 
+				new SuperHero.SuperHeroBuilder("Joker", 1900)
+				.isVillain()
+				.isWounded()
+				.setSuperPower(new SuperPowerInterface() {})
+				.build();
 	}
 
 }
