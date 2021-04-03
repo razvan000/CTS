@@ -1,6 +1,6 @@
 	Review
 1. The code is not formatted
-2. Methods should be named appropriately in order to give a glimpse on what they do. -> rename "calculate" and "setValue"
+2. Methods should be named appropriately in order to give a glimpse on what they do. -> rename "calculate" and "setValue". Also rename "rate" to "interestRate"
 3. Inconsistency with naming conventions. Use lower camelcase
 4. Define each variable on a single line
 5. Use curly brackets even when there is a single instruction
@@ -17,6 +17,7 @@
 16. KISS - the method "calculate" does 2 things. create a method for calculating interest
 17. The class account does not have single responsibility-> create a printer class and a fees calculator one.
 18. Don't define variable unless you really have to use them ('vb' at line 37)
-19. Validate inputs
+19. Validate all inputs
+20. Make attributes private and provide getters.
 
 
