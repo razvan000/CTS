@@ -23,7 +23,6 @@ public class Account implements InterestRatePayable {
 	}
 
 	public double getLoanValue() {
-		System.out.println("The loan value is " + this.loanValue);
 		return loanValue;
 	}
 
@@ -44,8 +43,7 @@ public class Account implements InterestRatePayable {
 		return this.accountType;
 	}
 	
-	public double getInterestRate() {
-		System.out.println("The rate is " + interestPercentRate);
+	public double getInterestPercentRate() {
 		return this.interestPercentRate;
 	}
 

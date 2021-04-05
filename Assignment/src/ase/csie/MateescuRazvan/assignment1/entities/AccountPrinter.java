@@ -10,4 +10,12 @@ public class AccountPrinter {
 	public void printAccount() {
 		System.out.println("This is an account");
 	}
+	
+	public void printAccountInterestRate(Account account) {
+		System.out.println("The rate is " + account.getInterestPercentRate());
+	}
+	
+	public void printAccountLoanValue(Account account) {
+		System.out.println("The rate is " + account.getLoanValue());
+	}
 }

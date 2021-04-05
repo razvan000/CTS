@@ -12,6 +12,7 @@
 	Functions
 - Validate all inputs
 - KISS - the method "calculate" does 2 things. create a method for calculating interest
+- Methods should do one thing -> create separate methods for printing only the loanValue and the interestRate and out-source them into the AccountPrinter Class.
 
 	Classes
 - The class account does not have single responsibility-> create a printer class and a fees calculator one.
