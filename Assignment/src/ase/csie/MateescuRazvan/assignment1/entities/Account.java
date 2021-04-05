@@ -35,6 +35,15 @@ public class Account implements InterestRatePayable {
 		}
 	}
 
+
+	public int getDaysActive() {
+		return this.daysActive;
+	}
+
+	public int getAccountType() {
+		return this.accountType;
+	}
+	
 	public double getInterestRate() {
 		System.out.println("The rate is " + interestPercentRate);
 		return this.interestPercentRate;
@@ -43,18 +52,6 @@ public class Account implements InterestRatePayable {
 	@Override
 	public double getMonthlyInterestRateValue() {
 		return loanValue * interestPercentRate;
-	}
-
-	public double getInterestPercentRate() {
-		return this.interestPercentRate;
-	}
-
-	public int getDaysActive() {
-		return this.daysActive;
-	}
-
-	public int getAccountType() {
-		return this.accountType;
 	}
 
 }
