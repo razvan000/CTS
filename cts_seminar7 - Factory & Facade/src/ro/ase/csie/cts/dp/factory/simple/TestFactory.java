@@ -15,7 +15,6 @@ public class TestFactory {
 		weapon = WeaponFactory.getWeapon(WeaponType.MACHINE_GUN,"red");
 		weapon = WeaponFactory.getWeapon(WeaponType.BAZOOKA, "green");
 		
-		
 	}
 
 }
