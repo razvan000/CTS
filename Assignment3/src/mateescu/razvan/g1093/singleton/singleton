@@ -1,0 +1,4 @@
+Smart Password Manager for Web Applications
+
+Since the application is a Chrome extension, I have background scripts and foreground scripts that need to communicate with the database. 
+In order not to overload it, a Singleton instance will be created and used by al the objects.

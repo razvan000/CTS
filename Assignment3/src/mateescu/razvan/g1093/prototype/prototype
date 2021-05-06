@@ -1,0 +1,4 @@
+Smart Password Manager for Web Applications
+
+Each time the user enters a new website in the same session, an AES module must be initialised in order to be responsive in case of log in
+or register. this module is costly because there are a lot of look up tables and variables that must be initialised too.
