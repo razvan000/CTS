@@ -18,6 +18,7 @@ import ro.ase.csie.cts.models.Student;
 
 public class TestStudent {
 	
+	//test fixture = the data that we need for tests
 	static Student student;
 	static ArrayList<Integer> grades;
 	static String initialName = "John";
