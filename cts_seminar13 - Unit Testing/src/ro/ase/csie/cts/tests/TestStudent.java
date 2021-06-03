@@ -10,11 +10,14 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import ro.ase.csie.cts.exceptions.WrongAgeException;
 import ro.ase.csie.cts.exceptions.WrongGradeExceptions;
 import ro.ase.csie.cts.exceptions.WrongNameException;
 import ro.ase.csie.cts.models.Student;
+import ro.ase.csie.cts.tests.category.ImportantTest;
+import ro.ase.csie.cts.tests.category.PerformanceTest;
 
 public class TestStudent {
 	
@@ -89,6 +92,7 @@ public class TestStudent {
 		student.setName(newName);
 	}
 	
+	@Category({ImportantTest.class, PerformanceTest.class})
 	@Test
 	public void testGetGradesAverage() throws WrongGradeExceptions {
 		ArrayList<Integer> sortedGrades = new ArrayList<>();
